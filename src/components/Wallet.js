@@ -8,7 +8,7 @@ const Wallet = ({ income, expense }) => {
         </div>
         <div className="wallet-info--expense">
           <p className="wallet-info-title">Expense</p>
-          <p className="wallet-info-amount">${expense}</p>
+          <p className="wallet-info-amount">${-expense}</p>
         </div>
       </div>
     </div>

@@ -1,13 +1,16 @@
 import RecordsCard from "./RecordsCard";
 
-const Records = ({ transactions }) => {
+const Records = ({ transactions, handleDelete }) => {
   const transactionsComponents = transactions.map((transaction) => (
     <RecordsCard
+      key={transaction.id}
       type={transaction.type}
       text={transaction.text}
       amount={transaction.amount}
+      handleDelete={() => handleDelete(transaction.id)}
     />
   ));
+
   return (
     <div className="records">
       <h3 className="records-title pb-5">History</h3>

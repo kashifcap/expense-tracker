@@ -1,4 +1,4 @@
-const RecordsCard = ({ type, text, amount }) => {
+const RecordsCard = ({ type, text, amount, handleDelete }) => {
   return (
     <div className="records-card">
       <p className="records--text">{text}</p>
@@ -8,7 +8,7 @@ const RecordsCard = ({ type, text, amount }) => {
           type === "income" ? "income" : "expense"
         }`}
       ></p>
-      <button type="button" className="delete-button">
+      <button type="button" className="delete-button" onClick={handleDelete}>
         Del
       </button>
     </div>
