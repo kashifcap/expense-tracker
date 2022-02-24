@@ -1,11 +1,11 @@
 import Balance from "./Balance";
 import Wallet from "./Wallet";
 
-const Main = () => {
+const Main = ({ amount, income, expense }) => {
   return (
     <div className="main">
-      <Balance />
-      <Wallet />
+      <Balance amount={amount} />
+      <Wallet income={income} expense={expense} />
     </div>
   );
 };

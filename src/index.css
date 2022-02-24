@@ -105,6 +105,10 @@ body {
   margin: 5px;
 }
 
+.records--text {
+  text-transform: capitalize;
+}
+
 .records--amount {
   margin-left: auto;
 }
